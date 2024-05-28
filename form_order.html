@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Form</title>
+    <link rel="stylesheet" href="main.css/form.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="food.html">FOOD TABLE</a></li>
+            <li><a href="video.html">VIDEOS</a></li>
+            <li><a href="image_gallery.html">IMAGE GALLERY</a></li>
+            <li><a href="form_order.html">ORDER FORM</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Food Ordering Form</h1>
+        <form action="/submit_order" method="post">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <h3>Main Courses</h3>
+                <label><input type="checkbox" name="main_course" value="burger"> Burger - $8.00</label>
+                <label><input type="checkbox" name="main_course" value="pizza"> Pizza - $12.00</label>
+                <label><input type="checkbox" name="main_course" value="pasta"> Pasta - $10.00</label>
+
+                <h3>Side Dishes</h3>
+                <label><input type="checkbox" name="side_dish" value="fries"> French Fries - $3.00</label>
+                <label><input type="checkbox" name="side_dish" value="salad"> Salad - $5.00</label>
+
+                <h3>Beverages</h3>
+                <label><input type="checkbox" name="beverage" value="soda"> Soda - $2.00</label>
+                <label><input type="checkbox" name="beverage" value="water"> Water - $1.00</label>
+                <label><input type="checkbox" name="beverage" value="iced_tea"> Iced Tea - $2.50</label>
+
+                <h3>Special Instructions</h3>
+                <textarea name="instructions" id="instructions" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label><input type="radio" name="payment" value="credit_card" required> Credit/Debit Card</label>
+                <label><input type="radio" name="payment" value="cash" required> Cash on Delivery</label>
+                <label><input type="radio" name="payment" value="online" required> Online Payment</label>
+            </fieldset>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
