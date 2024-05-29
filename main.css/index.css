@@ -34,10 +34,10 @@ nav ul li a:hover {
     font-weight: 800;
 }
 .header{
-    background-image: url('../images/bg-image.jpg');
+    background-image: url('../images/mama-cass-combo-noble-rice.jpg');
     position: relative;
-    padding: 100px 200px;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 500px;
 
 }
