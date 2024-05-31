@@ -41,3 +41,71 @@ nav ul li a:hover {
     padding: 500px;
 
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a6716;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Small screens (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .hero {
+        height: 200px;
+    }
+}
+
+/* Medium screens (tablets, 600px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header {
+        padding: 30px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+}
+
+/* Large screens (desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header {
+        padding: 40px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+}
+

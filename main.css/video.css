@@ -27,3 +27,69 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #e71818;
 }
+
+/* Media Queries */
+/* Small screens (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    h1 {
+        font-size: 1.5em;
+        padding: 0 10px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium screens (tablets, 600px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    .video-container iframe {
+        width: 48%;
+        height: auto;
+    }
+}
+
+/* Large screens (desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .video-container iframe {
+        width: 45%;
+        height: auto;
+    }
+}

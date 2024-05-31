@@ -1,14 +1,17 @@
 
+
+/* Main Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
+
 nav {
     background-color: #0a6716;
     color: #fff;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -16,18 +19,50 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 14px 20px;
     display: block;
 }
+
 nav ul li a:hover {
     background-color: #e71818;
+    text-decoration: 3px #0a6716 solid overline;
 }
+
+h1, h3 {
+    color:#0a6716;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.9em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 15px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+b {
+    color: #555;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -35,14 +70,107 @@ nav ul li a:hover {
     gap: 10px;
     margin: 20px 0;
 }
+
 .gallery img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
     object-fit: cover;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a6716;
+    margin-top: 20px;
+    color: #fff;
+}
 
+/* Media Queries */
+/* Small screens (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    body {
+        font-size: 14px;
+    }
 
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    h1 {
+        font-size: 2em;
+    }
 
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Medium screens (tablets, 600px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+     
+    body {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .gallery img {
+        max-width: 45%;
+    }
+}
+
+/* Large screens (desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .gallery img {
+        max-width: 30%;
+    }
+}
