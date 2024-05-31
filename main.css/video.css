@@ -27,6 +27,13 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #e71818;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a6716;
+    margin-top: 20px;
+    color: #fff;
+}
 
 /* Media Queries */
 /* Small screens (phones, 600px and down) */
