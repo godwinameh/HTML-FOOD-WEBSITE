@@ -26,6 +26,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     background-color: #e71818;
+    text-decoration:3px solid #0a6716 overline;
 }
 footer {
     text-align: center;
